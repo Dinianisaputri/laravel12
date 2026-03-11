@@ -1,6 +1,6 @@
 <div class="navbar-wrapper">
     <nav class="navbar">
-        <div class="logo">Dini<span>Portfolio</span></div>
+        <div class="logo">Portofolio</span></div>
         <ul>
             <li><a href="/">Beranda</a></li>
             <li><a href="/about">Tentang</a></li>

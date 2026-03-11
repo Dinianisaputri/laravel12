@@ -3,9 +3,9 @@
     <div class="footer-content">
         <p>&copy; 2026 Dini Anisa Putri. All rights reserved.</p>
         <div class="social-links">
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
-            <a href="#">LinkedIn</a>
+<a href="https://instagram.com/dn.app" target="_blank">Instagram</a>
+            <a href="https://twitter.com/dn.app" target="_blank">Twitter</a>
+            <a href="www.linkedin.com/in/dini-anisa-putri-7b02673b4" target="_blank ">LinkedIn</a>
         </div>
     </div>
 </footer>

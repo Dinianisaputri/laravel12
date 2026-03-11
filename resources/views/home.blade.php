@@ -148,7 +148,7 @@
                     <a href="/contact" class="btn" style="background: transparent; border: 2px solid white; color: white;">Hubungi Saya</a>
                 </div>
                 <div class="hero-image">
-                    🎬
+                    <img src="{{ asset('dini.jpeg') }}" alt="Dini Anisa Putri" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
                 </div>
             </div>
         </div>

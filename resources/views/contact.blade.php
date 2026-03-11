@@ -165,7 +165,7 @@
         
         .btn-submit:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(30, 58, 138, 0.4);
+            box-shadow: 0 10px 20px rgba(79, 172, 254, 0.4);
         }
         
         /* Responsive */
@@ -205,7 +205,7 @@
                         <div class="contact-icon">📧</div>
                         <div class="contact-text">
                             <h4>Email</h4>
-                            <p><a href="mailto:dini@example.com">dini@example.com</a></p>
+                            <p><a href="mailto:dini@example.com">dinianisa521@gmail.com</a></p>
                         </div>
                     </div>
                     
@@ -213,7 +213,7 @@
                         <div class="contact-icon">📱</div>
                         <div class="contact-text">
                             <h4>Telepon</h4>
-                            <p><a href="tel:+62123456789">+62 123 4567 89</a></p>
+                            <p><a href="tel:+62123456789">+62 8581 5515 489 </a></p>
                         </div>
                     </div>
                     
