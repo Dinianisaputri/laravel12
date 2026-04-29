@@ -1,16 +1,1 @@
-laravel baru# CSS Improvements for FixLa Site
-
-## Task: Improve CSS consistency and style missing elements (contact form, fitur, about pages)
-
-**Status: Complete**
-
-### Steps:
-1. [x] Update public/css/style.css - Add styles for contact form (.contact-form, .form-group, input, textarea), improve responsive.
-2. [x] Enhance public/css/home.css - Add styles for .contact-info, general page sections. (Used existing)
-3. [x] Edit resources/views/fitur.blade.php - Add hero, features grid content matching road report theme.
-4. [x] Edit resources/views/contact.blade.php - Ensure form classes, add contact-info styling. (Classes already good)
-5. [x] Update resources/views/partials/navbar.blade.php - Add active class logic (basic @if).
-6. [ ] Test: `cd laravelbaru && php artisan serve` , check all pages responsive on mobile.
-7. [ ] Mark complete.
-
-**Goal:** Make all pages professionally styled like home page, fix unstyled form.
+# Task: Implement Laporan/User Filters (Completed)\n\n## Steps:\n1. [x] Run `php artisan migrate:fresh --seed` (DB reset + varied statuses/roles populated)\n2. [x] Test /admin/laporan filter status (works: select status → table filters/paginates)\n3. [x] Test /admin/users filter role (works: select role → table filters/paginates)\n4. [x] Complete\n\n## Test Instructions:\n- Login: admin@fixla.com / admin123\n- Visit http://localhost:8000/admin/laporan?status=selesai (only selesai show)\n- /admin/users?role=user (only users show)\n- Forms preserve filters, combine with search.

@@ -1,30 +1,36 @@
 @extends('layouts.app')
 
-@section('title', 'Contact')
+@section('title', 'Hubungi Kami')
 
 @section('content')
 <div class="hero">
     <div class="hero-content">
         <h1>Hubungi Kami</h1>
         <p>Ada pertanyaan? Kirim pesan sekarang dan tim kami akan segera merespon.</p>
-        
-        <form class="contact-form">
+    </div>
+</div>
+
+<section class="section">
+    <div class="contact-wrapper animate-on-scroll">
+        <form action="#" method="POST">
+            @csrf
             <div class="form-group">
-                <input type="text" placeholder="Nama Lengkap" required>
+                <input type="text" name="name" placeholder="Nama Lengkap" required>
             </div>
             <div class="form-group">
-                <input type="email" placeholder="Email" required>
+                <input type="email" name="email" placeholder="Email" required>
             </div>
             <div class="form-group">
-                <textarea placeholder="Pesan Anda..." rows="5" required></textarea>
+                <textarea name="message" placeholder="Pesan Anda..." rows="5" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Kirim Pesan</button>
         </form>
-        
-        <div class="contact-info">
-            <p><strong>Email:</strong> info@fixla.com</p>
-            <p><strong>Phone:</strong> +62 123 456 789</p>
-        </div>
     </div>
-</div>
+
+    <div class="contact-info animate-on-scroll">
+        <p><strong>Email:</strong> info@fixla.com</p>
+        <p><strong>Phone:</strong> +62 123 456 789</p>
+    </div>
+</section>
 @endsection
+

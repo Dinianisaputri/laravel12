@@ -21,6 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'role',
     ];
 
     /**
@@ -34,6 +35,22 @@ class User extends Authenticatable
     ];
 
     /**
+     * Get Laporans for this user.
+     */
+    public function laporans()
+    {
+        return $this->hasMany(Laporan::class);
+    }
+
+    /**
+     * Scope for admins.
+     */
+    public function scopeAdmin($query)
+    {
+        return $query->where('role', 'admin');
+    }
+
+    /**
      * Get the attributes that should be cast.
      *
      * @return array<string, string>
@@ -43,6 +60,7 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'role' => 'string',
         ];
     }
 }

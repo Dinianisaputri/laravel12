@@ -1,21 +1,23 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-   <title>@yield('title')</title>
-   
-<link rel="stylesheet" href="{{ asset('css/style.css') }}">
-<link rel="stylesheet" href="{{ asset('css/home.css') }}">
-@yield('styles') {{-- 👈 penting --}}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@yield('title', 'FixLa')</title>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    @yield('styles')
 </head>
 <body>
 
-@include('partials.navbar')
+    @include('partials.navbar')
 
-@yield('content')
+    <main>
+        @yield('content')
+    </main>
 
-@include('partials.footer')
+    @include('partials.footer')
 
-<script src="{{ asset('js/script.js') }}"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
 </body>
 </html>
+
